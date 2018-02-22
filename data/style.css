@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* - - - -  Banner  - - - - */
+.wrapper {
+    width: 1440px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#banner {
+    background-image: url(images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header {
+    padding: 2rem 0;
+}
+
+#logo {
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47px;
+    height: 43px;
+    float: left;
+}
+
+nav {
+    float: right;
+    vertical-align: middle;
+}
+
+#banner nav a{
+    margin-left: 4rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+}
+
+.content {
+    padding: 2rem 0 6rem 0;
+}
+
+.content h1, .content h2, .content p {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 0.3rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.content a {
+    text-transform: capitalize;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.content button {
+    text-align: center;
+}
