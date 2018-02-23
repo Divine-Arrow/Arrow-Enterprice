@@ -215,9 +215,20 @@ nav {
     opacity: 0.5;
 }
 
-/* ---   Projects --- */
+/* ---   project_section --- +++ && +++ --- Our Team --- */ 
+#project_section {
+    background-color: #f8f8f8;
+    padding-bottom: 2.5%;
+}
 
-.project img {
+.project {
+    max-width: 60%;
+    margin: auto;
+    margin-top: 2.3%;
+    padding-bottom: 2%;
+}
+
+.project img, .team img {
     width: 30%;
     /*width: 242px;*/
     height: 30%;
@@ -228,23 +239,15 @@ nav {
     transition: all 0.5s;
 }
 
-.project {
-    max-width: 60%;
-    margin: auto;
-    margin-top: 2.3%;
-    padding-bottom: 2%;
-}
-
 .project a img:hover {
     box-shadow: 0 10px 25px 1px #11b03180;
 }
 
-#projects .btn {
+#project_section .btn {
     margin-bottom: 5%;
-    /**/
 }
 
-#projects .btn button {
+#project_section .btn button {
     border: none;
     text-transform: inherit;
     outline: none;
@@ -262,10 +265,36 @@ nav {
     transition: all 0.3s;
 }
 
-#projects .btn button:hover {
+#project_section .btn button:hover {
     color: #26af5f;
     background-color: #f6f5f5;
     border: 2px solid #26af5f;
     box-shadow: none;
     border-color: #26af5f;
+}
+
+/* --- Our Team --- */
+
+.team {
+    max-width: 75%;
+    margin: auto;
+    margin-top: 5%;
+    padding-bottom: 2%;
+}
+
+.team a {
+    text-decoration: none;
+}
+
+#team_section {
+    margin-bottom: 15%;
+}
+
+#team_section img{
+    width: 22%;
+    height: 30%;
+}
+
+.team img:hover {
+    box-shadow: 0px 16px 15px -5px #616161;
 }
