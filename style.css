@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* - - - -  Banner  - - - - */
+.wrapper {
+    width: 1440px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+#banner {
+    background-image: url(images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+header {
+    padding: 2rem 0;
+}
+
+#logo {
+    background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 47px;
+    height: 43px;
+    float: left;
+}
+
+nav {
+    float: right;
+}
+
+#banner nav a{
+    margin-left: 4rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.content {
+    padding: 2rem 0 6rem 0;
+    margin-top: 15%;
+}
+
+.content p {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin-top: 0.3rem;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.3rem;
+    opacity: 0.95;
+}
+
+.content p:nth-child(3) {
+    margin-top: 2%;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.15rem;
+}
+
+.content p a{
+    text-transform: capitalize;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.contact {
+    font-family: 'Lato', sans-serif!important;
+    box-shadow: none !important;
+    outline: none !important;
+    margin-top: 6% !important;
+    margin-bottom: 5% !important;
+    color: #393939 !important;
+}
+
+
+/* ---------- Services -----------*/
+#services {
+    background-color: #efefef;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section_title {
+    max-width: 40%;
+    margin: 0 auto;
+    color: #464343;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.section_title p:first-child {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 1;
+    line-height: 150%;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+
+.section_title p:last-child {
+    color: balck;
+    opacity: 0.8;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    word-spacing: 1px;
+    padding-top: 2%;
+}
+
+.service {
+    max-width: 80%;
+    margin :auto;
+    margin-top: 5%;
+}
+
+.web_development, .ui, .software_deveopment {
+    max-width: 28%;
+    background-color: #fff;
+    display: inline-block;
+    border-radius: 1.8%;
+}
+
+.web_development img, .ui img, .software_deveopment img{
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.web_development h4, .ui h4, .software_deveopment h4{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+.web_development p, .ui p, .software_deveopment p {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 8%;
+    padding-right: 6.6%;
+    padding-left: 6.6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
