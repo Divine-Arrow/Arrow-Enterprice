@@ -15,7 +15,7 @@
     background-image: url(images/banner1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: right;
 
 }
 
@@ -128,6 +128,7 @@ nav {
 
 .section_title {
     max-width: 40%;
+    min-width: 60%;
     margin: 0 auto;
     color: #464343;
     text-align: center;
@@ -215,7 +216,8 @@ nav {
     opacity: 0.5;
 }
 
-/* ---   project_section --- +++ && +++ --- Our Team --- */ 
+/* ---   project_section --- +++ && +++ --- Our Team --- */
+
 #project_section {
     background-color: #f8f8f8;
     padding-bottom: 2.5%;
@@ -228,7 +230,8 @@ nav {
     padding-bottom: 2%;
 }
 
-.project img, .team img {
+.project img,
+.team img {
     width: 30%;
     /*width: 242px;*/
     height: 30%;
@@ -261,7 +264,6 @@ nav {
     margin: 0 auto;
     cursor: pointer;
     border: 2px solid #26af5f;
-    box-shadow: 0px 6px 30px 3px #939393;
     transition: all 0.3s;
 }
 
@@ -271,6 +273,7 @@ nav {
     border: 2px solid #26af5f;
     box-shadow: none;
     border-color: #26af5f;
+    box-shadow: 0px 6px 30px 3px #bdbdbd;
 }
 
 /* --- Our Team --- */
@@ -282,19 +285,91 @@ nav {
     padding-bottom: 2%;
 }
 
-.team a {
-    text-decoration: none;
-}
-
 #team_section {
     margin-bottom: 15%;
 }
 
-#team_section img{
-    width: 22%;
+.team_wrapper {
+    width: 22.3%;
     height: 30%;
+    display: inline-block;
+    margin-left: 2.1%;
+    position: relative;
+    /*overflow: hidden;*/
+    transition: all 0.3s;
 }
 
-.team img:hover {
-    box-shadow: 0px 16px 15px -5px #616161;
+.team_wrapper img {
+    width: 100%;
+    height: 100%;
 }
+
+.team img:hover,
+.team_wrapper span:hover ~ img {
+    /*box-shadow: 0px 16px 15px -5px #616161;*/
+    box-shadow: 5px 22px 60px 0px #959595;
+    /* Black in White effect */
+    filter: gray;
+    /* for IE5+ */
+    -webkit-filter: grayscale(1);
+    /* chrome */
+}
+
+.team_wrapper span {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    height: 30%;
+    z-index: 2;
+    left: 2%;
+    /* <==  span tag  */
+    top: 67%;
+    margin-top: 36.6%;
+    transition: all 0.3s cubic-bezier(0.48, 0.01, 0.43, 1.65);
+}
+
+.team_wrapper:hover > span {
+    opacity: 1;
+    /* <==  span tag  hovever */
+    display: block;
+    margin: 0.2%;
+}
+
+.team_wrapper span img {
+    /*width: 25px;
+    height: 25px;*/
+    width: 15%;
+    height: 30%;
+    display: inline-block;
+    margin: auto;
+    box-shadow: none;
+    margin-left: 5%;
+    /*cursor: pointer;*/
+}
+
+.team_wrapper span img:hover {
+    opacity: 1 !important;
+    box-shadow: none;
+    filter: none;
+    /* for IE5+ */
+    -webkit-filter: none;
+}
+
+.social {
+    max-width: 70%;
+    margin: auto;
+    font-family: 'montserrat', sans-serif;
+}
+
+.social h3 {
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+    text-transform: capitalize;
+}
+
+/*.social img:hover {
+    background-color: red; 
+}*/
