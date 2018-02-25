@@ -1,21 +1,11 @@
-/*var userInterface = function() {
-    
+/*function scrollTo(element) {
+  window.scroll({
+    behavior: 'smooth',
+    left: 0,
+    top: element.offsetTop
+  });
 }
 
-var calculation = function() {
-    
-}
-
-var logic = function() {
-    
-}*/
-
-var socialImg = document.querySelectorAll(".social img");
-
-var socialImages = Array.prototype.slice.call(socialImg);
-
-socialImg = document.querySelectorAll(".social img").addEventListener("click", function() {
-    body.style.backgroundColor = 'red';
-})
-
-console.log(socialImages);
+document.getElementById("services_ancor").addEventListener('click', () => {
+  scrollTo(document.getElementById("team_section"));
+});*/
