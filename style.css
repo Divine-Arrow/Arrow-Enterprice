@@ -3,7 +3,8 @@
     margin: 0;
 }
 
-                /* - - - -  Banner  - - - - */
+
+/* - - - -  Banner  - - - - */
 
 .wrapper {
     width: 1440px;
@@ -14,7 +15,6 @@
 #banner {
     background: url(images/banner1.jpg) no-repeat right;
     background-size: cover;
-
 }
 
 header {
@@ -94,16 +94,19 @@ nav {
     margin-bottom: 8%;
     outline: none;
     cursor: pointer;
-    transition: all 0.3s;1
+    transition: all 0.3s;
+    1
 }
 
 .contact:hover {
     background-color: #26af5f;
 }
 
-                /* ---------- Services -----------*/
 
-                    /*--  Section Title --*/
+/* ---------- Services -----------*/
+
+
+/*--  Section Title --*/
 
 #services {
     background-color: #efefef;
@@ -141,7 +144,7 @@ nav {
 }
 
 
-                /*--  Services --*/
+/*--  Services --*/
 
 .service {
     max-width: 80%;
@@ -201,7 +204,8 @@ nav {
     opacity: 0.5;
 }
 
-                /* ---   project_section --- +++ && +++ --- Our Team --- */
+
+/* ---   project_section --- +++ && +++ --- Our Team --- */
 
 #project_section {
     background-color: #f8f8f8;
@@ -262,7 +266,8 @@ nav {
     box-shadow: 0px 6px 30px 3px #bdbdbd;
 }
 
-                /* --- Our Team --- */
+
+/* --- Our Team --- */
 
 #team_section {
     margin-bottom: 5%;
@@ -292,7 +297,7 @@ nav {
 }
 
 .team_wrapper img:hover,
-.team_wrapper span:hover ~ img {
+.team_wrapper span:hover~img {
     /*box-shadow: 0px 16px 15px -5px #616161;*/
     box-shadow: 5px 22px 60px 0px #959595;
     /* Black in White effect */
@@ -310,11 +315,12 @@ nav {
     position: absolute;
     height: 30%;
     z-index: 2;
-    left: 2%; 
+    left: 2%;
     top: 67%;
     margin-top: 36.6%;
     transition: all 0.3s cubic-bezier(0.48, 0.01, 0.43, 1.65);
 }
+
 
 /*.team_wrapper span:not(:first-child) {
     background-color: rgba(255, 255, 255, 0.6);
@@ -347,7 +353,7 @@ nav {
     margin-top: 2%;
 }*/
 
-.team_wrapper:hover > span {
+.team_wrapper:hover>span {
     opacity: 1;
     /* <==  span tag  hovever */
     display: block;
@@ -392,8 +398,6 @@ nav {
     word-spacing: 5px;
 }
 
-
-
 .facebook:hover {
     content: url('images/icons/facebook2.png');
 }
@@ -411,7 +415,7 @@ nav {
 }
 
 
-                /* --- Review --- */
+/* --- Review --- */
 
 #review_section {
     background: url("images/review_backround2.jpg") no-repeat center;
@@ -425,15 +429,24 @@ nav {
     max-width: 50%;
     min-width: 30%;
     margin: auto;
-    padding-top: 6.5%;
+    padding-top: 4.5%;
     font-family: 'montserrat', sans-serif;
+    /*padding-top: 6%;
+    padding-bottom: 6%;*/
 }
 
+.review_wrapper {
+    /*
+    display: block;
+    margin: auto 0;*/
+    background-color: white;
+    /*margin-top: 10%;*/
+    border-radius: 3.5px;
+}
 
 .first {
     padding-top: 6%;
-    padding-bottom: 6%;
-    background-color: white;
+    padding-bottom: 2%;
 }
 
 .first img {
@@ -441,6 +454,10 @@ nav {
     height: 10%;
     display: block;
     margin: 0 auto;
+    
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    
 }
 
 .first p {
@@ -450,9 +467,31 @@ nav {
     color: rgba(52, 52, 52, 0.75);
     margin-top: 5%;
     font-size: 12px;
-    text-align-last: center;
+    text-align: center;
     line-height: 23px;
     font-weight: 600;
 }
 
 
+/* -- Circles -- */
+
+.review_dots {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.circles {
+    display: inline-block;
+    width: 15.51px;
+    height: 15.51px;
+    margin-left: 4px;
+    /*border-radius: 50%;*/
+    background-color: rgba(38, 175, 95, 0.6);
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    /*border: 3px solid red;*/
+}
+
+.active_review {
+    background-color: #26af5f !important;
+}
