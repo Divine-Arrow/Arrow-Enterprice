@@ -460,10 +460,33 @@ nav {
     display: block;
     margin: 0 auto;
     /*padding: 5%;*/
+<<<<<<< HEAD
     background-color: #26af5f;
+=======
+    background-color: red;
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     
+}
+
+.first img {
+    
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    
+    
+    width: 130px;
+    height: 130px;
+    /*display: block;
+    margin: 0 auto;*/
+    
+>>>>>>> 09a8437b55ba0f6bdcd623f68630368a8c2a45d3
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    
+    /*-webkit-clip-path: polygon(50% 5%, 95% 50%, 50% 95%, 5% 50%);
+    clip-path: polygon(50% 5%, 95% 50%, 50% 95%, 5% 50%);*/
 }
 
 .first img {
