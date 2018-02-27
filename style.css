@@ -240,20 +240,20 @@ nav {
 }
 
 #project_section .btn button {
-    border: none;
     text-transform: inherit;
     outline: none;
     background-color: #26af5f;
     color: white;
-    padding: 0.6rem 1.3rem;
+    padding: 0.3rem 0.7rem;
     border-radius: 0.3rem;
     font-family: 'Lato', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     display: block;
     margin: 0 auto;
     cursor: pointer;
     border: 2px solid #26af5f;
     transition: all 0.3s;
+    font-weight: 400;
 }
 
 #project_section .btn button:hover {
@@ -602,25 +602,117 @@ nav {
 #blog_section {
     background-color: #f8f8f8;
     font-family: 'montserrat', sans-serif;
-    margin-bottom: 20%;
 }
 
 .blog_wrapper {
-    padding-top: 5%;
+    /*padding-top: 6%;*/
+    max-width: 75%;
+    display: block;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 5.5%;
 }
 
-.blog_wrapper h3{
+.blog_title{
     color: #1f1f1f;
     text-align: center;
-    font-size: 25px;
-    letter-spacing: 0.8px;
-    word-spacing: 3px;
+    font-size: 22px;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
     text-transform: uppercase;
+    padding-bottom: 6%;
 }
 
 .blog {
-    max-width: 27%;
-    margin-top: 5%;
+    /*max-width: 21.5%;*/
+    width: 27%;
+    display: inline-block;
+    margin-left: 4.7%;
+    background-color: white;
+    border-radius: 1.5%;
+    cursor: pointer;
+    box-shadow:0 0 9px 4px #d1d1d1;
+    transition: all 0.3s;
 }
 
-/* https://www.youtube.com/watch?v=Sp54Qoic0Uk */
+.blog:hover {
+    box-shadow:  -8px 9px 9px 0px #d1d1d1;
+}
+
+.blog_image {
+    width: 100%;
+    filter: blur(2px);
+    filter: gray;
+    -webkit-filter: grayscale(0.89);
+    transition: all 0.3s;
+}
+
+.blog:hover > .blog_image {
+    filter: none;
+}
+
+.blog_content {
+    margin: 8%;
+    margin-right: 6%;
+    margin-bottom: 10%;
+}
+
+.blog_content h3 {
+    font-size: 17.5px;
+    letter-spacing: 0.2px;
+    color: #434242;
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.blog_content p {
+    font-size: 10.5px;
+    line-height: 15px;
+    color: #777575;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 12%;
+}
+
+.time p, .comment p {
+    opacity: 0.8;
+    font-size: 9.2px;
+}
+
+.time {
+    float: left;
+    min-width: 26%;
+}
+
+.time img {
+    float: left;
+}
+
+.time p {
+    float: right;
+}
+
+.comment {
+    float: right;
+    min-width: 34%;
+}
+
+.comment img {
+    float: left;
+}
+
+.comment p {
+    float: right;
+}
+
+                /* - - - - Contact Us - - - - */
+
+#contact_section {
+    background: url("images/contact_background.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.contact_container {
+    width: 100%;
+    height: 500px;
+}
