@@ -98,7 +98,8 @@ nav {
 }
 
 .contact:hover {
-    background-color: #26af5f;
+    background-color: #ffffff;
+    color: #1b5292;
 }
 
 
@@ -318,38 +319,6 @@ nav {
     margin-top: 36.6%;
     transition: all 0.3s cubic-bezier(0.48, 0.01, 0.43, 1.65);
 }
-
-
-/*.team_wrapper span:not(:first-child) {
-    background-color: rgba(255, 255, 255, 0.6);
-    opacity: 0;
-    width: 100%;
-    position: absolute;
-    height: 30%;
-    z-index: 2;
-    left: 2%; 
-    top: 67%;
-    margin-top: 36.6%;
-    transition: all 0.3s cubic-bezier(0.48, 0.01, 0.43, 1.65);
-}
-
-.post {
-    background-color: rgba(255, 255, 255, 0.6);
-    width: 100%;
-    position: absolute;
-    height: 13%;
-    z-index: 3;
-    left: 2%;
-    transition: all 0.3s cubic-bezier(0.48, 0.01, 0.43, 1.65);
-}
-
-.post h3 {
-    font-family: 'montserrat', sans-serif;
-    text-align: center;
-    vertical-align: middle;
-    color: #414141;
-    margin-top: 2%;
-}*/
 
 .team_wrapper:hover > span {
     opacity: 1;
@@ -720,39 +689,36 @@ nav {
 
 /* contact form */
 
-.contactus {
-    max-width: 55%;
-    margin-left: 10%;
-    /*remove*/
+.top p {
+    width: auto;
+    font-size: 25px;
+    color: white;
+    text-align: center;
 }
 
-.top {
-    max-width: 40%;
-}
-
-.input_box input,
-.input_box textarea {
-    width: 90%;
+.fit input,
+.message textarea {
     height: 32px;
     margin-top: none;
     border: none;
     background-color: transparent;
-    border-bottom: 2px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
     color: #cdcdcd;
     outline: none;
     cursor: pointer;
 }
 
-/*.tops {
-    float: left;
-}*/
-
-.input_box textarea {
-    max-width: 70%;
+.fit {
+    display: inline-block;
+    padding-bottom: 5%;
 }
 
-.input_box input[type="text"],
-.input_box textarea {
+.mail {
+    margin-left: 1.5%;
+}
+
+.fit input[type="text"],
+.message textarea {
     color: #cdcdcd;
     font-size: 16px;
     padding-left: 40px;
@@ -760,15 +726,15 @@ nav {
     font-family: 'lato', sans-serif;
 }
 
-.input_box input[type="text"]:focus,
-.input_box textarea:focus {
-    border-bottom: 2px solid #26af5f;
+.fit input[type="text"]:focus,
+.message textarea:focus {
+    border-bottom: 1px solid #26af5f;
     opacity: 1 !important;
     color: #ffffff;
 }
 
-.input_box input::placeholder,
-.input_box textarea::placeholder {
+.fit input::placeholder,
+.message textarea::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #cdcdcd;
     opacity: 0.8;
@@ -777,42 +743,41 @@ nav {
     /* Firefox */
 }
 
-.input_box input:-ms-input-placeholder,
-.input_box textarea:-ms-input-placeholder {
+.fit input:-ms-input-placeholder,
+.message textarea:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #cdcdcd;
 }
 
-.input_box input::-ms-input-placeholder,
-.input_box textarea::-ms-input-placeholder {
+.fit input::-ms-input-placeholder,
+.message textarea::-ms-input-placeholder {
     /* Microsoft Edge */
     color: #cdcdcd;
 }
 
-.input_box input[type="placeholder"],
-.input_box textarea[type="placeholder"] {
+.fit input[type="placeholder"],
+.message textarea[type="placeholder"] {
     color: #cdcdcd;
     font-size: 20px;
 }
 
-.input_box {
+.fit {
     position: relative;
 }
 
-.input_box img {
+.fit img {
     position: absolute;
     width: 23px;
     top: 5px;
     left: 0.2px;
 }
 
-.message img {
-    position: absolute;
-    top: -3px;
-    /*left: -100px !important;*/
-    /*background-color: red;*/
+.message textarea {
+    width: 30%;
 }
 
-.message {
-    margin-top: 10%;
+.message img {
+    position: absolute;
+    width: 23px;
+    left: 0.2px;
 }
