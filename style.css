@@ -4,7 +4,7 @@
 }
 
 
-/* - - - -  Banner  - - - - */
+/* - - - - -  Banner  - - - - - */
 
 .wrapper {
     width: 1440px;
@@ -168,7 +168,6 @@ nav {
 .ui:hover,
 .software_deveopment:hover {
     box-shadow: 0px 12px 33px #353535;
-    /*box-shadow:  0px 12px 83px #353535;*/
 }
 
 .web_development img,
@@ -812,6 +811,7 @@ nav {
     left: 270.2px;
 }
 
+<<<<<<< HEAD
 /*button*/
 
 .contact_wrapper button {
@@ -902,3 +902,6 @@ fotter p{
 
 
 
+=======
+/* fix the paragraph problem of cantact section*/
+>>>>>>> 2f4f253202e5fff0cd54f65a8af01554185e1e78
