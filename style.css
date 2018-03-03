@@ -675,25 +675,42 @@ nav {
 
 /* - - - - Contact Us - - - - */
 
+.form-section {
+    width: 33%;
+    padding-top: 5%;
+    padding-left: 20%;
+    display: inline-block;
+    float: left;
+}
+
 #contact_section {
     background: url("images/contact_background.jpg") no-repeat center;
     background-size: cover;
-    margin-bottom: 10%;
     font-family: 'montserrat', sans-serif;
 }
 
 .contact_container {
     width: 100%;
     height: 500px;
+    /*remove after all*/
 }
 
 /* contact form */
 
+.top {
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
 .top p {
-    width: auto;
+    /*display: inline-block;*/
     font-size: 25px;
-    color: white;
-    text-align: center;
+    color: #e4e4e4;
+    text-align: left;
+    margin-bottom: 15%;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .fit input,
@@ -706,15 +723,30 @@ nav {
     color: #cdcdcd;
     outline: none;
     cursor: pointer;
+    width: 78%;
 }
 
 .fit {
     display: inline-block;
     padding-bottom: 5%;
+    width: 43%;
 }
 
 .mail {
     margin-left: 1.5%;
+}
+
+.message {
+    display: inline;
+    width: 93%;
+}
+
+.message textarea {
+    height: 60px;
+}
+
+.fit input {
+    width: 80%;
 }
 
 .fit input[type="text"],
@@ -772,12 +804,101 @@ nav {
     left: 0.2px;
 }
 
-.message textarea {
-    width: 30%;
-}
+
 
 .message img {
     position: absolute;
     width: 23px;
-    left: 0.2px;
+    left: 270.2px;
 }
+
+/*button*/
+
+.contact_wrapper button {
+    text-transform: inherit;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #26af5f;
+    padding: 0.7rem 3rem;
+    border-radius: 0.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 900;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: -3px 1px 20px 0px #313131;
+    transition: all 0.3s;
+    margin-top: 6.5%;
+    display: block;
+}
+
+.contact_wrapper button:hover {
+    color: #f6f5f5;
+    background-color: #26af5f;
+    box-shadow: none;
+    border-color: #26af5f;
+}
+
+/* Adress */
+
+.our_office {
+    width: 25%;
+    display: inline-block;
+    background-color: white;
+    float: left;
+    margin-top: 6%;
+    margin-left: 4%;
+    border-radius: 5px;
+    padding: 2.5% 0px 6% 0px;
+}
+
+.office_content {
+    position: relative;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.office_content p {
+    display: inline-block;
+    width: 83%;
+    padding-left: 13%;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2f2f2f;
+}
+
+.office_content img{
+    width: 20px;
+} 
+
+.our_office h3 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: left;
+    color: #7b797a;
+    padding-left: 15%;
+}
+
+.office_content img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+                /* - - - - Fotter - - - - */
+
+fotter{
+ 
+}
+fotter p{
+      background-color: #3c3c3c;
+    text-align: center;
+    color: #e1e1e1;
+    font-size: 12px;
+    padding: 1.5% 0px;
+    font-family: 'montserat',sans-serif;
+}
+
+
+

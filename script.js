@@ -27,7 +27,6 @@ var slider = function () {
         curr++;
         if (curr > 2) {
             curr = 0;
-            currentCircle = 0;
         }
     }
 }
