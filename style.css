@@ -17,9 +17,7 @@
     background-size: cover;
 }
 
-header {
-    padding: 2rem 0;
-}
+
 
 #logo {
     background: url(images/logo.png) no-repeat center;
@@ -33,8 +31,8 @@ nav {
     float: right;
 }
 
-#banner nav a {
-    margin-left: 4rem;
+#header nav a {
+    margin-left: 3.5rem;
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -43,9 +41,18 @@ nav {
     letter-spacing: 0.4px;
 }
 
+#home {
+    margin-left: 0px !important;
+}
+
 .content {
+    
+    padding: 18rem 0 6rem 0;
+    
+    /*
     padding: 2rem 0 6rem 0;
     margin-top: 19%;
+    */  /*redmoving after jd responsive*/
 }
 
 .content p {
@@ -229,6 +236,7 @@ nav {
     margin-bottom: 1.8%;
     box-shadow: 0 3px 11px 0px #bab8b8;
     transition: all 0.5s;
+    
 }
 
 .project a img:hover {
@@ -900,5 +908,335 @@ fotter p{
     font-family: 'montserat',sans-serif;
 }
 
+
+
+
+
+                /* - - - - responsive - - - - */
+
+
+/*responsive for mobile*/
+
+@media only screen and (min-width:280px) and (max-width:600px) {
+    /*for header and banner*/
+    header {
+        display: none;
+    }
+    .content {
+        padding: 11rem 0 3rem 0;
+        margin-top: 0px;
+    }
+    .content p {
+        font-size: 1.5rem;
+        color: #fbf7f7;
+    }
+    .contact {
+        font-size: 1.2rem;
+    }
+    /*service*/
+    .section_title p:first-child {
+        font-size: 23px;
+    }
+    .section_title p:last-child {
+        display: none;
+    }
+    .web_development,
+    .ui,
+    .software_deveopment {
+        max-width: 78%;
+        margin-top: 5%;
+        margin-left: 13%;
+    }
+    /*project*/
+    .section_title {
+        margin-bottom: 28px;
+    }
+    .project {
+        max-width: 70%;
+    }
+    .project img {
+        width: 47%;
+        margin-left: 2.0%;
+        margin-bottom: 3.8%;
+    }
+    #project_section .btn button {
+        font-size: 1rem;
+    }
+    /*team*/
+    .team {
+        max-width: 100%;
+    }
+    .team_wrapper {
+        width: 43.3%;
+        height: 30%;
+        margin-left: 4.1%;
+        margin-bottom: 2%;
+    }
+
+
+    .social h3 {
+        font-size: 15px;
+    }
+    .team_wrapper span {
+        background-color: rgba(255, 255, 255, 0.6);
+        opacity: 1;
+        z-index: 2;
+        margin-top: 0%;
+        transition: all 0s cubic-bezier(0, 0, 0, 0);
+    }
+    .team_wrapper img:hover,
+    .team_wrapper span:hover ~ img {
+        box-shadow: 5px 22px 60px 0px #959595;
+        filter: none;
+    }
+    /*review*/
+    .review_container {
+        max-width: 67%;
+    }
+    .review {
+        padding-bottom: 17%;
+        height: 255px;
+    }
+    .review .clippath_border {
+        width: 152px;
+        height: 51%;
+    }
+    .review img {
+        top: 2%;
+        left: 2%;
+        width: 97%;
+        height: 97%;
+    }
+    .review p {
+        max-width: 75%;
+    }
+    /*partners*/
+    .parners_wrapper {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .parners_wrapper img {
+        width: 90px;
+    }
+    /*blog*/
+    .blog_wrapper {
+        max-width: 95%;
+    }
+    .blog {
+        max-width: 67.5%;
+        width: 70%;
+        display: inline-block;
+        margin-left: 15.7%;
+        margin-bottom: 5%;
+    }
+    .blog_image {
+        width: 100%;
+        filter: blur(0px);
+        filter: none;
+        -webkit-filter: grayscale(0) blur(0px);
+    }
+    /*contact us*/
+    .form-section {
+        width: 99%;
+        padding-top: 5%;
+        padding-left: 1%;
+        text-align: center;
+    }
+    .top {
+        margin-bottom: 28px;
+    }
+    .top p {
+        text-align: center;
+    }
+    .fit {
+        width: 204px;
+    }
+    .message img {
+        left: 8%;
+    }
+    .contact_container {
+        height: 662px;
+    }
+    .contact_container button {
+        text-align: center;
+        margin: 20px auto;
+    }
+    .our_office {
+        width: 263px;
+        margin-left: 14%;
+    }
+    /*fotter*/
+    fotter p {
+        font-size: 11px;
+    }
+}
+
+/*responsive for tablet landscape*/
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+    /*service*/
+    .service {
+        max-width: 100%;
+    }
+    /*project*/
+    .project {
+        max-width: 75%;
+    }
+    /*team*/
+    .team {
+        max-width: 96%;
+    }
+    .team_wrapper {
+        width: 22.3%;
+    }
+    .team_wrapper span {
+        background-color: rgba(255, 255, 255, 0.6);
+        opacity: 1;
+        z-index: 2;
+        margin-top: 0%;
+        transition: all 0s cubic-bezier(0, 0, 0, 0);
+    }
+    .team_wrapper img:hover,
+    .team_wrapper span:hover ~ img {
+        box-shadow: 5px 22px 60px 0px #959595;
+        filter: none;
+    }
+
+    /*review*/
+    .review {
+        padding-top: 6%;
+        height: 238px;
+    }
+    /*partner*/
+    .parners_wrapper {
+        max-width: 90%;
+        text-align: center;
+    }
+    /*blogger*/
+    .blog_wrapper {
+        padding-top: 6%;
+        max-width: 88%;
+    }
+    .blog_image {
+        width: 100%;
+        filter: blur(0px);
+        filter: none;
+        -webkit-filter: grayscale(0) blur(0px);
+    }
+    /*contact us*/
+    .form-section {
+        width: 48%;
+        padding-left: 11%;
+    }
+    .fit input {
+        width: 68%;
+    }
+    .message img {
+        left: 12%;
+    }
+    .our_office {
+        width: 35%;
+        margin-top: 12%;
+    }
+    .contact_container {
+        height: 425px;
+    }
+
+
+}
+
+/*responsive for tablet potrait*/
+
+@media only screen and (min-width:901px) and (max-width:1200px) {
+    .content {
+        padding: 11rem 0 3rem 0;
+    }
+
+    .service {
+        max-width: 90%;
+    }
+
+    .team {
+        max-width: 85%;
+    }
+    .review {
+        padding-top: 6%;
+        height: 238px;
+    }
+    .parners_wrapper {
+        max-width: 94%;
+    }
+    .form-section {
+        width: 38%;
+        padding-left: 16%;
+    }
+    .fit input {
+        width: 74%;
+    }
+    .message img {
+        left: 16%;
+    }
+    .our_office {
+        width: 30%;
+        margin-top: 10%;
+    }
+}
+
+
+                /* - - - Navbar - - - - */
+
+                 /*-----  Menu   -----*/
+
+
+
+#logo {
+    position: fixed;
+    left: 13%;
+    top: 5%;; 
+}
+
+.menu {
+    width: 55px;
+    height: 55px;
+    background-color: #f0f0f0;
+    position: fixed;
+    border-radius: 50%;
+    z-index: 1000;
+    right: 13%;
+    top: 5.2%;
+    box-shadow:  0px 4px 8px 2px rgba(0, 0, 0, 0.44);
+    cursor: pointer;
+}
+
+.menu_container {
+    margin-top: 30%;
+}
+
+.menu span {
+    width: 35px;
+    height: 4px;
+    margin: 0 auto;
+    height: 4px;
+    background-color: #717171;
+    display: block;
+    margin-top: 8.5%;
+    border-radius: 1rem;
+    transition: all 0.2s cubic-bezier(0.82, 0.17, 0.71, 1.56);
+}
+
+.menu:hover span{
+    background-color: #f53855 !important;
+}
+
+/* effect*/
+
+/*nav*/
+
+nav {
+    padding-top: 3.7%;
+    position: fixed;
+    right: 7%;
+}
 
 
