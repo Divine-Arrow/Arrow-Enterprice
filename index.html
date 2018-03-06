@@ -3,42 +3,39 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Arrow Enterprise</title>
-    <link rel="shortcut icon" href="images/logo_favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jd Enterprise</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500|Lato|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya|Lato" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-
-
-    <!--navbar-->
-    <section id="header">
-        <div class="header_wrapper">
-            <div id="logo"></div>
-            <nav>
-                <div class="menu" style="display: block">
-                    <div class="menu_container">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="user_nav" style="display: none">
-                    <a href="#" id="home">Home</a>
-                    <a href="#" id="services_ancor">Service</a>
-                    <a href="#" id="project_ancor">Portfolio</a>
-                    <a href="#" id="team_ancor">Team</a>
-                    <a href="#">Blog</a>
-                </div>
-            </nav>
-        </div>
-    </section>
-
-
     <!------  Banner  ------>
+    <div id="logo"></div>
+    <div class="navigation">
+        <div class="navigation_button">
+            <span class="navigation_icon ">&nbsp;</span>
+        </div>
+
+        <div class="navigation_background">&nbsp;</div>
+        <div class="navigation_nav">
+            <ul class="navigation_list">
+                <li class="navigation_item"><a href="#banner" class="navigation_link">Home</a></li>
+                <li class="navigation_item"><a href="#services" class="navigation_link">Service</a></li>
+
+                <li class="navigation_item"><a href="#project_section" class="navigation_link">Projects</a></li>
+
+                <li class="navigation_item"><a href="#team_section" class="navigation_link">Team</a></li>
+
+                <li class="navigation_item"><a href="#contact_section" class="navigation_link">Contact Us</a></li>
+
+            </ul>
+        </div>
+    </div>
 
     <section id="banner">
         <div class="wrapper">
@@ -46,6 +43,8 @@
                 <p>always a step ahead</p>
                 <p>go pro</p>
                 <p><a href="#">learn more</a></p>
+                <!--<h6 class="contact"><a href="#">Contact Us</a></h6>-->
+                <!--<p><button class="bttn-pill bttn-lg bttn-default contact">Contact Us</button></p>-->
                 <button class="contact">Get Started</button>
             </div>
         </div>
@@ -164,6 +163,8 @@
         </div>
     </section>
 
+
+
     <!-- Review -->
 
     <section id="review_section">
@@ -206,7 +207,7 @@
         </div>
     </section>
 
-    <!--  Parners  -->
+    <!--  Partners  -->
 
     <section id="partners">
         <div class="parners_wrapper">
@@ -280,53 +281,50 @@
 
     <section id="contact_section">
         <div class="contact_container">
-            <div class="contact_wrapper">
-                <div class="contactus">
 
-                    <form class="form-section">
-                        <div class="top">
-                            <p>Don’t be shy, Say Hello!</p>
-                            <div class="fit name">
-                                <input type="text" placeholder="Name">
-                                <img src="images/name.png" alt="Name">
-                            </div>
-                            <div class="fit mail">
-                                <input type="text" placeholder="Email">
-                                <img src="images/mailid.png" alt="Email">
-                            </div>
-                        </div>
-                        <div class="message">
-                            <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                            <img src="images/message.png" alt="Message">
-                        </div>
-                        <button>Send</button>
-                    </form>
-                    <div class="our_office">
-                        <h3>Our Office</h3>
-                        <div class="office_content office_home">
-                            <img src="images/home.png" alt="home">
-                            <p>A-*4, P***a* Vi**r p**t-2 <br> Delhi, India</p>
-                        </div>
-                        <div class="office_content office_phone">
-                            <img src="images/call.png" alt="phone">
-                            <p>+91-97******46</p>
-                        </div>
-                        <div class="office_content office_mail">
-                            <img src="images/mail.png" alt="mail">
-                            <p>bhupenders225@gmail.com</p>
-                        </div>
+            <form class="form-section clearfix">
+                <div class="top">
+                    <p>Don’t be shy, Say Hello!</p>
+                    <div class="fit name">
+                        <input type="text" placeholder="Name">
+                        <img src="images/name.png" alt="Name">
+                    </div>
+                    <div class="fit mail">
+                        <input type="text" placeholder="Email">
+                        <img src="images/mailid.png" alt="Email">
                     </div>
                 </div>
-
+                <div class="message">
+                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <img src="images/message.png" alt="Message">
+                </div>
+                <button>Send</button>
+            </form>
+            <div class="our_office">
+                <h3>Our Office</h3>
+                <div class="office_content office_home">
+                    <img src="images/home.png" alt="home">
+                    <p>Pratap vihar 2 84/A <br> Delhi, India</p>
+                </div>
+                <div class="office_content office_phone">
+                    <img src="images/call.png" alt="phone">
+                    <p>+91-97******46</p>
+                </div>
+                <div class="office_content office_mail">
+                    <img src="images/mail.png" alt="mail">
+                    <p>Divinearrowb@gmail.com</p>
+                </div>
             </div>
+
         </div>
     </section>
 
     <!--  Fotter  -->
 
     <fotter>
-        <p>Copyright &copy; 2018 by Bhupender.All Rights Reserved &reg;. Developed by Bhupender (bhupenders225@gmail.com)</p>
+        <p>&copy;Copyright 2018 by J & B. All Rights Reserved. Developed by J & B</p>
     </fotter>
+
 
     <script src="script.js"></script>
 </body>

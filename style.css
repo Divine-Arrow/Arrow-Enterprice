@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
 
 /* - - - -  Banner  - - - - */
 
@@ -17,22 +22,164 @@
     background-size: cover;
 }
 
+header {
+    padding: 2rem 0;
+}
 
 
 #logo {
+    position: fixed;
+    z-index: 1000;
     background: url(images/logo.png) no-repeat center;
     background-size: cover;
-    width: 47px;
-    height: 43px;
-    float: left;
+    width: 43px;
+    height: 39px;
+    top: 6%;
+    left: 5%;
+}
+
+
+
+/*navigation*/
+
+.navigation_background {
+    width: 3.9rem;
+    height: 3.9rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background-image: radial-gradient(#3c74a0, #051838);
+    z-index: 1000;
+    transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+    ;
+}
+
+.navigation_button {
+    width: 3.9rem;
+    height: 3.9rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 1.9rem;
+    right: 2rem;
+    background-color: white;
+    z-index: 2000;
+    box-shadow: 0px 2px 5px black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navigation_nav {
+    width: 0;
+    height: 100vh;
+    top: 0px;
+    left: -90px;
+    opacity: 0;
+    position: fixed;
+    z-index: 1500;
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.navigation_list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+
+.navigation_item {
+    margin: 2px;
+}
+
+.navigation_link {
+    display: inline-block;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+    background-size: 220%;
+    transition: all 0.4s;
+
+}
+
+.navigation_link:hover {
+    background-position: 100%;
+    color: #326791;
+    transform: translateX(10px);
+}
+
+/*for javascript*/
+
+.nav_backgroundToggle {
+    transform: scale(55);
+
+}
+
+.nav_nav {
+    opacity: 1;
+    left: 0px;
+    width: 100%;
+}
+
+/*icon*/
+
+.navigation_icon {
+    position: relative;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.navigation_icon,
+.navigation_icon::before,
+.navigation_icon::after {
+    width: 38px;
+    height: 3px;
+    background-color: #736b6b;
+    display: inline-block;
+}
+
+.navigation_icon::before,
+.navigation_icon::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    transition: all .3s;
+}
+
+.navigation_icon::before {
+    top: -10px;
+}
+
+.navigation_icon::after {
+    top: 10px;
+}
+
+.icon1 {
+    background-color: transparent;
+}
+
+.icon1::before {
+    top: 0px;
+    transform: rotate(45deg);
+}
+
+.icon1::after {
+    top: 0px;
+    transform: rotate(-45deg);
 }
 
 nav {
     float: right;
 }
 
-#header nav a {
-    margin-left: 3.5rem;
+#banner nav a {
+    margin-left: 4rem;
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -41,18 +188,9 @@ nav {
     letter-spacing: 0.4px;
 }
 
-#home {
-    margin-left: 0px !important;
-}
-
 .content {
-    
-    padding: 18rem 0 6rem 0;
-    
-    /*
-    padding: 2rem 0 6rem 0;
-    margin-top: 19%;
-    */  /*redmoving after jd responsive*/
+    padding: 21rem 0 3rem 0;
+    margin-top: 0%;
 }
 
 .content p {
@@ -109,7 +247,6 @@ nav {
     color: #1b5292;
 }
 
-
 /* ---------- Services -----------*/
 
 /*--  Section Title --*/
@@ -131,7 +268,7 @@ nav {
 }
 
 .section_title p:first-child {
-    font-size: 1.3rem;
+    font-size: 30px;
     text-transform: uppercase;
     font-weight: 900;
     opacity: 1;
@@ -148,7 +285,6 @@ nav {
     word-spacing: 1px;
     padding-top: 2%;
 }
-
 
 /*--  Services --*/
 
@@ -210,7 +346,6 @@ nav {
     opacity: 0.5;
 }
 
-
 /* ---   project_section --- +++ && +++ --- Our Team --- */
 
 #project_section {
@@ -236,7 +371,6 @@ nav {
     margin-bottom: 1.8%;
     box-shadow: 0 3px 11px 0px #bab8b8;
     transition: all 0.5s;
-    
 }
 
 .project a img:hover {
@@ -272,7 +406,6 @@ nav {
     border-color: #26af5f;
     box-shadow: 0px 6px 30px 3px #bdbdbd;
 }
-
 
 /* --- Our Team --- */
 
@@ -393,7 +526,6 @@ nav {
     content: url('images/icons/instagram2.png');
 }
 
-
 /* --- Review --- */
 
 .first {
@@ -442,40 +574,31 @@ nav {
     padding-top: 3%;
     padding-bottom: 3%;
     height: 200px;
-
     /*padding-bottom: 2%;*/
 }
 
-
 .review .clippath_border {
-
     position: relative;
-
     /*width: 140px;
     height: 140px;*/
     width: 115px;
     height: 115px;
-
     display: block;
     margin: 0 auto;
     margin-bottom: 2.5%;
     background-color: #26af5f;
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-
 }
 
 .review img {
-
     position: absolute;
     top: 2.2%;
     left: 2.2%;
-
     /*width: 132px;
     height: 132px;*/
     width: 110px;
     height: 110px;
-
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
@@ -492,7 +615,6 @@ nav {
     font-weight: 600;
 }
 
-
 /* -- Circles -- */
 
 .review_dots {
@@ -503,10 +625,8 @@ nav {
 .circles {
     display: inline-block;
     position: relative;
-
     width: 20px;
     height: 20px;
-
     margin-left: 4px;
     background-color: rgba(38, 175, 95, 0.6);
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -524,7 +644,6 @@ nav {
     left: -3%;
     width: 13px;
     height: 13px;
-
     margin-left: 4px;
     background-color: white;
     -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -534,7 +653,6 @@ nav {
 .review_wrapper:hover .review_dots .active_review {
     background-color: #fd3f3f !important;
 }
-
 
 /* - - - -  Partners  - - - - */
 
@@ -561,7 +679,6 @@ nav {
     filter: gray;
     /* chrome */
     -webkit-filter: grayscale(0.95);
-
     transition: all 0.3s;
 }
 
@@ -570,7 +687,6 @@ nav {
     /* chrome */
     -webkit-filter: none;
 }
-
 
 /* - - - - Blog - - - - */
 
@@ -812,8 +928,6 @@ nav {
     left: 0.2px;
 }
 
-
-
 .message img {
     position: absolute;
     width: 23px;
@@ -822,7 +936,7 @@ nav {
 
 /*button*/
 
-.contact_wrapper button {
+.contact_container button {
     text-transform: inherit;
     border: none;
     outline: none;
@@ -841,7 +955,7 @@ nav {
     display: block;
 }
 
-.contact_wrapper button:hover {
+.contact_container button:hover {
     color: #f6f5f5;
     background-color: #26af5f;
     box-shadow: none;
@@ -876,9 +990,9 @@ nav {
     color: #2f2f2f;
 }
 
-.office_content img{
+.office_content img {
     width: 20px;
-} 
+}
 
 .our_office h3 {
     font-size: 1.8rem;
@@ -888,46 +1002,86 @@ nav {
     padding-left: 15%;
 }
 
-.office_content img{
+.office_content img {
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
-                /* - - - - Fotter - - - - */
+/* - - - - Fotter - - - - */
 
-fotter{
- 
-}
-fotter p{
+fotter {}
+
+fotter p {
     background-color: #3c3c3c;
     text-align: center;
-    color: #ababab;
-    font-size: 0.8rem;
+    color: #e1e1e1;
+    font-size: 12px;
     padding: 1.5% 0px;
-    font-family: 'montserat',sans-serif;
+    font-family: 'montserat', sans-serif;
 }
 
 
 
-
-
-                /* - - - - responsive - - - - */
 
 
 /*responsive for mobile*/
 
 @media only screen and (min-width:280px) and (max-width:600px) {
-    /*for header and banner*/
-    header {
-        display: none;
+    #logo {
+        top: 4%;
     }
+    /*for navigation and banner*/
+    .navigation_button {
+        width: 2.7rem;
+        height: 2.7rem;
+        top: 1.3rem;
+        right: 1rem;
+    }
+    .navigation_icon,
+    .navigation_icon::before,
+    .navigation_icon::after {
+        width: 25px;
+        height: 2px;
+    }
+    .navigation_icon {
+        margin-top: 20px;
+    }
+    .navigation_icon::before {
+        top: -7px;
+    }
+
+    .navigation_icon::after {
+        top: 7px;
+    }
+    .icon1::before {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+
+    .icon1::after {
+        top: 0px;
+        transform: rotate(-45deg);
+    }
+    .navigation_background {
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 1.3rem;
+        right: 1rem;
+    }
+    .navigation_link {
+        font-size: 24px;
+        padding: 7px 18px;
+    }
+
     .content {
         padding: 11rem 0 3rem 0;
         margin-top: 0px;
     }
     .content p {
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #fbf7f7;
     }
     .contact {
@@ -935,7 +1089,7 @@ fotter p{
     }
     /*service*/
     .section_title p:first-child {
-        font-size: 23px;
+        font-size: 20px;
     }
     .section_title p:last-child {
         display: none;
@@ -1019,6 +1173,10 @@ fotter p{
     .parners_wrapper img {
         width: 90px;
     }
+    .parners_wrapper img {
+        filter: none;
+        -webkit-filter: none;
+    }
     /*blog*/
     .blog_wrapper {
         max-width: 95%;
@@ -1075,6 +1233,50 @@ fotter p{
 /*responsive for tablet landscape*/
 
 @media only screen and (min-width:601px) and (max-width:900px) {
+    /*for navigation and banner*/
+    .navigation_button {
+        width: 2.9rem;
+        height: 2.9rem;
+        top: 1.3rem;
+        right: 1rem;
+    }
+    .navigation_icon,
+    .navigation_icon::before,
+    .navigation_icon::after {
+        width: 25px;
+        height: 2px;
+    }
+    .navigation_icon {
+        margin-top: 22px;
+    }
+    .navigation_icon::before {
+        top: -7px;
+    }
+
+    .navigation_icon::after {
+        top: 7px;
+    }
+    .icon1::before {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+
+    .icon1::after {
+        top: 0px;
+        transform: rotate(-45deg);
+    }
+    .navigation_background {
+        width: 2.7rem;
+        height: 2.7rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 1.3rem;
+        right: 1rem;
+    }
+    .navigation_link {
+        font-size: 24px;
+        padding: 7px 18px;
+    }
     /*service*/
     .service {
         max-width: 100%;
@@ -1082,6 +1284,10 @@ fotter p{
     /*project*/
     .project {
         max-width: 75%;
+    }
+    .parners_wrapper img {
+        filter: none;
+        -webkit-filter: none;
     }
     /*team*/
     .team {
@@ -1149,6 +1355,50 @@ fotter p{
 /*responsive for tablet potrait*/
 
 @media only screen and (min-width:901px) and (max-width:1200px) {
+    /*for navigation and banner*/
+    .navigation_button {
+        width: 3.2rem;
+        height: 3.2rem;
+        top: 1.3rem;
+        right: 1.3rem;
+    }
+    .navigation_icon,
+    .navigation_icon::before,
+    .navigation_icon::after {
+        width: 28px;
+        height: 2px;
+    }
+    .navigation_icon {
+        margin-top: 24px;
+    }
+    .navigation_icon::before {
+        top: -7px;
+    }
+
+    .navigation_icon::after {
+        top: 7px;
+    }
+    .icon1::before {
+        top: 0px;
+        transform: rotate(45deg);
+    }
+
+    .icon1::after {
+        top: 0px;
+        transform: rotate(-45deg);
+    }
+    .navigation_background {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        position: fixed;
+        top: 1.3rem;
+        right: 1.3rem;
+    }
+    .navigation_link {
+        font-size: 27px;
+        padding: 8px 19px;
+    }
     .content {
         padding: 11rem 0 3rem 0;
     }
@@ -1182,61 +1432,3 @@ fotter p{
         margin-top: 10%;
     }
 }
-
-
-                /* - - - Navbar - - - - */
-
-                 /*-----  Menu   -----*/
-
-
-
-#logo {
-    position: fixed;
-    left: 13%;
-    top: 5%;; 
-}
-
-.menu {
-    width: 55px;
-    height: 55px;
-    background-color: #f0f0f0;
-    position: fixed;
-    border-radius: 50%;
-    z-index: 1000;
-    right: 13%;
-    top: 5.2%;
-    box-shadow:  0px 4px 8px 2px rgba(0, 0, 0, 0.44);
-    cursor: pointer;
-}
-
-.menu_container {
-    margin-top: 30%;
-}
-
-.menu span {
-    width: 35px;
-    height: 4px;
-    margin: 0 auto;
-    height: 4px;
-    background-color: #717171;
-    display: block;
-    margin-top: 8.5%;
-    border-radius: 1rem;
-    transition: all 0.2s cubic-bezier(0.82, 0.17, 0.71, 1.56);
-}
-
-.menu:hover span{
-    background-color: #f53855 !important;
-}
-
-/* effect*/
-
-/*nav*/
-
-nav {
-    padding-top: 3.7%;
-    position: fixed;
-    right: 7%;
-}
-
-
